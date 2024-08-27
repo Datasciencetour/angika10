@@ -5,7 +5,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 model_dir = "angika-llm-1b"
 
 # Download the tokenizer and model
-tokenizer = AutoTokenizer.from_pretrained("satyajeet234/angika-llm-1b", cache_dir=model_dir)
+tokenizer = AutoTokenizer.from_pretrained("satyajeet234/angika-llm-1b", cache_dir=model_dir, legacy=True)
 model = AutoModelForCausalLM.from_pretrained("satyajeet234/angika-llm-1b", cache_dir=model_dir)
 
 # Streamlit app
